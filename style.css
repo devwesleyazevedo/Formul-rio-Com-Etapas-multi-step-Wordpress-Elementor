@@ -1,0 +1,123 @@
+selector textarea:focus, selector input:focus, selector select:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+selector h3 {
+    padding: 0;
+    margin: 0;
+    font-family: "DINPro", Sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #104b9c;
+}
+selector h5 {
+    text-align: center;
+    color: #bdbdbd;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+selector p {
+    font-family: "DINPro", Sans-serif;
+    font-size: 0.9rem;
+}
+selector .e-form__indicators__indicator__separator {
+    display: none;
+}
+selector .e-form__indicators--type-number_text {
+    margin-bottom: 20px;
+}
+selector .e-form__indicators--type-number_text > div{
+    flex: 1;
+    padding: 0;
+}
+selector .e-form__indicators__indicator {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+selector .e-form__indicators__indicator__number.e-form__indicators__indicator--shape-circle {
+    margin: 0;
+    position: absolute;
+    padding: 22px;
+    border: 2px solid;
+    color: #959595;
+    border-color: #fff;
+    background: rgb(239 239 239);
+    background: linear-gradient(90deg, #ededed, #f1f1f1, #f9f9f9);
+}
+selector .e-form__indicators__indicator__label {
+    flex: 1;
+    padding: 12px;
+    background: rgb(239 239 239);
+    background: linear-gradient(90deg, #ededed, #f1f1f1, #f9f9f9);
+    margin-left: 11px;
+    border-radius: 20px;
+    color: #959595;
+}
+selector .e-form__indicators__indicator:nth-child(3) {
+    margin-right: -20px;
+    margin-left: -20px;
+}
+selector .elementor-form-fields-wrapper {
+    padding: 0 35px 
+}
+selector .e-form__buttons {
+    margin-top: 50px 
+}
+selector .e-form__indicators__indicator--state-completed .e-form__indicators__indicator__number:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: url('/wp-content/uploads/2022/06/cheked.png');
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute 
+}
+/* ACTIVE CSS */
+selector .e-form__indicators__indicator--state-active .e-form__indicators__indicator__number.e-form__indicators__indicator--shape-circle {
+    background: rgb(16 75 156);
+    background: linear-gradient(90deg, rgb(85 138 210) 0%, rgb(16 75 156) 47%, rgb(16 75 156) 100%);
+    border-color: #fff;
+    color: #fff;
+   ;
+}
+selector .e-form__indicators__indicator--state-active .e-form__indicators__indicator__label {
+    background: rgb(16 75 156);
+    background: linear-gradient(90deg, rgb(16 75 156) 0%, rgb(16 75 156) 47%, rgb(102 153 223) 100%);
+    color: #fff;
+}
+/* COMPLETED */
+selector .e-form__indicators__indicator--state-completed .e-form__indicators__indicator__number.e-form__indicators__indicator--shape-circle {
+    background: rgb(50 186 124);
+    background: linear-gradient(90deg, rgb(79 231 161) 0%, rgb(50 186 124) 47%, rgb(50 186 124) 100%);
+    border-color: #fff;
+    color: #fff;
+}
+selector .e-form__indicators__indicator--state-completed .e-form__indicators__indicator__label {
+    background: rgb(50 186 124);
+    background: linear-gradient(90deg, rgb(51 188 126) 0%, rgb(50 186 124) 47%, rgb(74 224 155) 100%);
+    color: #fff;
+}
+@media(max-width: 500px){
+    selector .e-form__indicators {
+        flex-direction: column;
+        gap: 15px 
+   }
+    selector .e-form__indicators .e-form__indicators__indicator {
+        width: 100%;
+   }
+    selector .e-form__indicators__indicator:nth-child(3) {
+        margin-right: 0px;
+        margin-left: 0px;
+   }
+    selector .e-form__indicators--type-number_text {
+        margin-bottom: 40px;
+   }
+    selector .e-form__buttons {
+        margin-top: 30px 
+   }
+}
